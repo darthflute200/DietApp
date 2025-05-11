@@ -7,6 +7,7 @@ import SıgnUp from "../SignPages/SignUp";
 import HomePage from "../SignPages/HomePage";
 import DietHomePage from "../DietPages/DietHomePage";
 import Profile from "../DietPages/Profile";
+import WaterPage from "../DietPages/Water";
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 export type WelcomeStackParamList = {
@@ -21,6 +22,7 @@ export const DietPageNavigator = () =>{
       options={{
         tabBarLabel:"Home"
           }} component={DietHomePage} />
+     <Tab.Screen name="water" component={WaterPage}/>
       <Tab.Screen name="Profile"   options={{ tabBarLabel: "Profile"
           }} component={Profile} />
     </Tab.Navigator>
