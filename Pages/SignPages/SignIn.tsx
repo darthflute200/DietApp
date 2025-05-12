@@ -34,8 +34,8 @@ const SıgnIn = () =>{
         <View style={GLOBAL_STYLES.HomePageMainView}>
             <Text style={GLOBAL_STYLES.DietAppCaptionStyle}>Sıgn In</Text>
             <View style={GLOBAL_STYLES.SignButtonView}>
-                <TextInput onChangeText={SetEmail} style={GLOBAL_STYLES.textInput}  placeholder="Email?"/>
-                <TextInput onChangeText={SetPassword} style={GLOBAL_STYLES.textInput} placeholder="Password?"/>
+                <TextInput autoCapitalize="none" onChangeText={SetEmail} style={GLOBAL_STYLES.textInput}  placeholder="Email?"/>
+                <TextInput autoCapitalize="none" onChangeText={SetPassword} style={GLOBAL_STYLES.textInput} placeholder="Password?"/>
             </View>
             <Pressable onPress={handleSignIn} style={[GLOBAL_STYLES.SignUpButtonStyle,GLOBAL_STYLES.SignInButtonColor]}><Text style={GLOBAL_STYLES.SıgnButtonsText}>Sıgn In</Text></Pressable>
         </View>

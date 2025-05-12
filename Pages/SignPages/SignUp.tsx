@@ -48,11 +48,11 @@ const SıgnUp = () =>{
             {Error && <Text>Passwords must be same</Text>}
             <Text style={GLOBAL_STYLES.DietAppCaptionStyle}>Sıgn Up</Text>
             <View style={GLOBAL_STYLES.SignUpPageButtonView}>
-                    <TextInput style={GLOBAL_STYLES.textInput} onChangeText={SetName} placeholder="Name?"/>
-                    <TextInput style={GLOBAL_STYLES.textInput} onChangeText={SetSurname} placeholder="Surname?"/>
-                    <TextInput style={GLOBAL_STYLES.textInput} onChangeText={SetEmail} placeholder="Email?"/>
-                    <TextInput style={GLOBAL_STYLES.textInput} onChangeText={SetPassword} placeholder="Password?"/>
-                    <TextInput style={GLOBAL_STYLES.textInput} onChangeText={SetPasswordRepeat} placeholder="Password Again?"/>
+                    <TextInput autoCapitalize="none" style={GLOBAL_STYLES.textInput} onChangeText={SetName} placeholder="Name?"/>
+                    <TextInput autoCapitalize="none" style={GLOBAL_STYLES.textInput} onChangeText={SetSurname} placeholder="Surname?"/>
+                    <TextInput autoCapitalize="none" style={GLOBAL_STYLES.textInput} onChangeText={SetEmail} placeholder="Email?"/>
+                    <TextInput autoCapitalize="none" style={GLOBAL_STYLES.textInput} onChangeText={SetPassword} placeholder="Password?"/>
+                    <TextInput autoCapitalize="none" style={GLOBAL_STYLES.textInput} onChangeText={SetPasswordRepeat} placeholder="Password Again?"/>
             </View>
             <Pressable onPress={handleSignUp} style={[GLOBAL_STYLES.SignUpButtonStyle,GLOBAL_STYLES.SignUpButtonColor]}><Text style={GLOBAL_STYLES.SıgnButtonsText}>Sıgn Up</Text></Pressable>
         </View>

@@ -74,9 +74,9 @@ const WaterPage = () =>{
             <Text>Total you want to drink: {totalWater.toString()}lt</Text>
             <Text>Remaining: {(totalWater - currentWater).toString()}lt</Text>
             <View style={GLOBAL_STYLES.waterInputView}>
-                <TextInput style={GLOBAL_STYLES.textInput}  value={totalWater.toString()} onChangeText={(text) => setTotalWater(Number(text))} placeholder="Total you want to drink"/>
+                <TextInput autoCapitalize="none" style={GLOBAL_STYLES.textInput}  value={totalWater.toString()} onChangeText={(text) => setTotalWater(Number(text))} placeholder="Total you want to drink"/>
                 <Pressable style={[GLOBAL_STYLES.scanButton]} onPress={totalWaterFecth}><Text style={GLOBAL_STYLES.scanButtonText}>Set Total Water</Text></Pressable>
-                <TextInput style={GLOBAL_STYLES.textInput}  value={currentWater.toString()} onChangeText={(text) => setCurrentWater(Number(text))} placeholder="You drank today?"/>
+                <TextInput autoCapitalize="none" style={GLOBAL_STYLES.textInput}  value={currentWater.toString()} onChangeText={(text) => setCurrentWater(Number(text))} placeholder="You drank today?"/>
                 <Pressable style={[GLOBAL_STYLES.SignUpButtonStyle, GLOBAL_STYLES.SignInButtonColor]}   onPress={drankWaterFetch}><Text style={GLOBAL_STYLES.scanButtonText}>Set drank Water</Text></Pressable>
             </View>
         </View>
