@@ -28,7 +28,7 @@ const WaterPage = () =>{
         if (user?.userId) {
           fetchWaterData();
         }
-      }, [user?.userId]);
+      }, []);
 
 
     const drankWaterFetch = async() =>{
