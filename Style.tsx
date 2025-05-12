@@ -93,5 +93,18 @@ export const GLOBAL_STYLES = StyleSheet.create({
         justifyContent:"center",
         width:"100%",
         height:"100%"
+      },
+      waterMainView:{
+        width:"100%",
+        height:"100%",
+        justifyContent:"center",
+        alignItems:"center",
+        gap: 20
+      },
+      waterInputView:{
+        width: "100%",
+        alignItems: "center",
+        gap: 10
+     
       }
 })
